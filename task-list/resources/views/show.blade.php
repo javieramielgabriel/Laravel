@@ -10,4 +10,6 @@
 @endif
 <p>{{$task->created_at}}</p>
 <p>{{$task->updated_at}}</p>
+<a href="{{ route ('tasks.edit', ['task' => $task->id]) }}">EDIT</a>
+<p><a href="{{route ('tasks.index')}}">HOME</a></p>
 @endsection
